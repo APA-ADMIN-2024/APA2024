@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #1e1f21;
+}
+
+
+
+
+
+
+.stories-background{
+    position: relative;
+}
+
+.stories__bck__img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.stories__shadow{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(180deg,                 /*top to bottom*/
+                                hsla(0, 78%, 38%, 0), 
+                                hsl(220, 5%, 12%)74%);   /*starts being black from 80% of height to end*/
+}
+
+
+.story__txt__container{
+    position: relative;
+    padding-top: 2.5rem;
+    row-gap: 3rem;
+}
+
+.stories__data{
+    text-align: center;
+}
+
+.stories__title{
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+
+.stories__description{
+    color: var(--title-color);
+    margin-bottom: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.story-container{
+    position: relative;
+    top: 6.5rem;
+    margin-bottom: 10rem;
+}
+
+.story__cards{
+    position: relative;
+    display: flex;    
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.story__card{
+    width: 320px;
+    height: 500px;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    margin: 20px;
+    box-shadow: 5px 5px 15px rgba(0,0,0, 0.5);
+}
+
+.card-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-body{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    position: absolute;
+    background: #1f3d3738;
+    backdrop-filter: blur(5px);
+    border-radius: 12px;
+    color: #fff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.95s;
+}
+
+.story__card:hover .card-body{
+    right: 0;
+}
+
+.card-title{
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.card-subtitle{
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.card-info{
+    font-size: 16px;
+    line-height: 25px;
+    margin: 40px 0;
+    font-weight: 400;
+}
+
+.card-btn{
+    color: #1e1f21;
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    outline: none;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .5s;
+    text-align: center;
+}
+
+.card-btn:hover{
+    background: #1e1f21;
+    color: #fff;
+    border: 2px  solid #fff;
+
+}
+
+/* ======================================= */
+.story-data{
+    font-size: 16px;
+    line-height: 25px;
+    margin: 40px 0;
+    font-weight: 400;
+    text-align:justify;   
+}
+
+.story-data span{
+    font-weight: 500;
+    color:	#e7e6e6
+}

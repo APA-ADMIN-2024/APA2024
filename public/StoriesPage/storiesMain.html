@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animal Protection Alliance</title>
+
+    <!--Favicon-->
+    <link rel="icon" href="../images/earth.png" type="image/x-icon">
+    
+
+    <!-- REMIX ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" integrity="sha512-MqL4+Io386IOPMKKyplKII0pVW5e+kb+PI/I3N87G3fHIfrgNNsRpzIXEi+0MQC0sR9xZNqZqCYVcC61fL5+Vg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- HOMEPAGE - CSS -->
+     <link rel="stylesheet" href="../HomePage/style.css">
+
+     <!-- STORIES - CSS -->
+      <link rel="stylesheet" href="./storiesStyle.css">
+</head>
+<body>
+
+      <!--================== HEADER ==================-->
+      <header class="header" id="header">
+        <nav class="nav container">
+            <a href="../HomePage/index.html" class="nav__logo">
+              AnimalProtectionAlliance
+            </a>
+
+            <div class="nav__menu" id="nav_menu">
+                <ul class="nav__list">
+                  <li class="nav__item" onclick="location.href='../HomePage/index.html';" style="cursor: pointer;">
+                    <a href="#home" class="nav__link">Home</a>
+                    </li>
+
+                    <li class="nav__item" onclick="location.href='../StoriesPage/storiesMain.html';" style="cursor: pointer;">
+                        <a href="#stories" class="nav__link active-link">Stories</a>
+                    </li>
+
+                    <li class="nav__item" onclick="location.href='../EventsPage/EventsMain.html';" style="cursor: pointer;">
+                        <a href="#events" class="nav__link">Events</a>
+                    </li>
+
+                    <li class="nav__item" onclick="location.href='../DonationPage/DonationMain.html';" style="cursor: pointer;">
+                        <a href="#donate" class="nav__link">Donate</a>
+                    </li>
+                </ul>
+
+                <!--Close Button-->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <!-- Toggle Button -->
+             <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+             </div>
+
+        </nav>
+    </header>
+
+    <!-- ================ BACKGROUND IMAGE THINGS ================== -->
+    <section class="stories-background section">
+      <img src="./images/full_background.jpg" alt="" class="stories__bck__img" id="home__bg">
+      <div class="stories__shadow"></div>
+
+      <div class="story__txt__container container grid">
+        <div class="stories__data">
+          
+          <h1 class="stories__title">
+            STORIES
+          </h1>
+          
+          <p class="stories__description">
+            Each story reveals their struggles, resilience, and the incredible transformations <br> made possible by love, care, and community support.
+          </p>
+        </div>
+      </div>
+    </section>
+
+        <!-- ===================== STORIES CONTAINER ====================== -->
+        <div class="story-container">
+            <div class="story__cards">
+                <div class="story__card">
+                    <img src="./images/download (3).jpg" alt="" class="card-img">
+                    <div class="card-body">
+                        <h1 class="card-title">
+                            Forest Bear
+                        </h1>
+    
+                        <p class="card-subtitle">
+                            Lost it's Home
+                        </p>
+    
+                        <p class="card-info">
+                          In 2023, wildfires destroyed a black bear’s forest home in Canada, forcing him into a nearby town in search of food. The incident highlighted the impact of climate change on wildlife.
+                        </p>
+    
+                        <a class="card-btn" href="./bear.html">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="story__card">
+                    <img src="./images/white-tiger.jpg" alt="" class="card-img">
+                    <div class="card-body">
+                        <h1 class="card-title">
+                          White Tiger
+                        </h1>
+    
+                        <p class="card-subtitle">
+                          A Struggle for Survival
+                        </p>
+    
+                        <p class="card-info">
+                          In 2020, a white tiger in Madhya Pradesh was displaced by habitat loss. Rescued by officials, the incident highlighted the threat of habitat destruction to endangered species.
+                        </p>
+    
+                        <a class="card-btn" href="./WhiteTiger.html">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="story__card">
+                    <img src="./images/dog.jpg" alt="" class="card-img">
+                    <div class="card-body">
+                        <h1 class="card-title">
+                          Rescued Stray<
+                        </h1>
+    
+                        <p class="card-subtitle">
+                          Survival After the Fires
+                        </p>
+    
+                        <p class="card-info">
+                          In 2021, a stray dog in Australia was rescued after losing its home to wildfires. The incident highlighted the growing impact of natural disasters on animals, both wild and domestic.
+                        </p>
+    
+                        <a class="card-btn" href="./dog.html">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="story__card">
+                    <img src="./images/elephant.jpg" alt="" class="card-img">
+                    <div class="card-body">
+                        <h1 class="card-title">
+                          Fleeing Giants
+                        </h1>
+    
+                        <p class="card-subtitle">
+                          Logging Sparks Conflicts
+                        </p>
+    
+                        <p class="card-info">
+                            In 2021, deforestation in Assam forced an elephant family into human settlements, sparking conflicts. Officials relocated them to a sanctuary, highlighting the impact of habitat loss.
+                        </p>
+    
+                        <a class="card-btn" href="./Elephant.html">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="story__card">
+                    <img src="./images/leopard.jpg" alt="" class="card-img">
+                    <div class="card-body">
+                        <h1 class="card-title">
+                          Urban Leopards
+                        </h1>
+    
+                        <p class="card-subtitle">
+                          When Habitats Collide
+                        </p>
+    
+                        <p class="card-info">
+                          In 2022, urbanization in Maharashtra displaced a leopard into a residential area. Wildlife officials captured and relocated it to a sanctuary, highlighting the growing threat of habitat destruction to big cats.
+                        </p>
+    
+                        <a class="card-btn" href="./Leopard.html">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="story__card">
+                    <img src="./images/deer.jpg" alt="" class="card-img">
+                    <div class="card-body">
+                        <h1 class="card-title">
+                          Lost Deer
+                        </h1>
+    
+                        <p class="card-subtitle">
+                          Deforestation Increases Conflict
+                        </p>
+    
+                        <p class="card-info">
+                          In 2021, deforestation in Rajasthan displaced sambar deer, forcing them into villages where they damaged crops and caused conflicts. Wildlife officials relocated them to a forest reserve, highlighting habitat loss's impact on wildlife.
+                        </p>
+    
+                        <a class="card-btn" href="./SambarDeer.html">Learn More</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+<!-- ======================= FOOTER ======================= -->
+<footer class="footer">
+  <div class="footer__container container grid">
+      <div class="footer__content grid">
+          <div>
+              <a href="https://www.animalaidunlimited.org/" target="_blank" class="footer__logo">
+                  Animal Protection Alliance
+              </a>
+
+              <p class="footer__description">
+                  Help us make a difference for animals in need. <br>
+                  Your support provides care, shelter, and hope. <br>
+                  Join us in protecting them!
+              </p>
+          </div>
+
+          <div class="footer__data grid">
+              <div>
+                  <h3 class="footer__title">About</h3>
+                  <ul class="footer__links">
+                      <li>
+                          <a href="https://www.animalaidunlimited.org/about-us" target="_blank" class="footer__link">About Us</a>
+                      </li>
+                      <li>
+                          <a href="https://www.peta.org/about-peta/" target="_blank" class="footer__link">Features</a>
+                      </li>
+                      <li>
+                          <a href="https://www.aspca.org/news" target="_blank" class="footer__link">News Blog</a>
+                      </li>
+                  </ul>
+              </div>
+
+              <div>
+                  <h3 class="footer__title">Company</h3>
+                  <ul class="footer__links">
+                      <li>
+                          <a href="https://www.animalaidunlimited.org/faqs" target="_blank" class="footer__link">FAQs</a>
+                      </li>
+                      <li>
+                          <a href="https://www.wwf.org.uk/about-us/history" target="_blank" class="footer__link">History</a>
+                      </li>
+                      <li>
+                          <a href="https://www.animalaidunlimited.org/testimonials" target="_blank" class="footer__link">Testimonials</a>
+                      </li>
+                  </ul>
+              </div>
+
+              <div>
+                  <h3 class="footer__title">Contact</h3>
+                  <ul class="footer__links">
+                      <li>
+                          <a href="https://www.animalaidunlimited.org/contact" target="_blank" class="footer__link">Call Center</a>
+                      </li>
+                      <li>
+                          <a href="https://www.peta.org/contact-peta/" target="_blank" class="footer__link">Support Center</a>
+                      </li>
+                      <li>
+                          <a href="https://www.aspca.org/about-us/contact-us" target="_blank" class="footer__link">Contact Us</a>
+                      </li>
+                  </ul>
+              </div>
+
+              <div>
+                  <h3 class="footer__title">Support</h3>
+                  <ul class="footer__links">
+                      <li>
+                          <a href="https://www.wwf.org.uk/privacy" target="_blank" class="footer__link">Privacy Policy</a>
+                      </li>
+                      <li>
+                          <a href="https://www.peta.org/about-peta/terms-of-use/" target="_blank" class="footer__link">Terms & Services</a>
+                      </li>
+                      <li>
+                          <a href="https://www.animalaidunlimited.org/donate" target="_blank" class="footer__link">Donations</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+
+      <div class="footer__group">
+          <div class="footer__social">
+              <a href="https://www.facebook.com/worldwildlife" target="_blank" class="footer__social-link">
+                  <i class="ri-facebook-circle-line"></i>
+              </a>
+              <a href="https://www.instagram.com/world_wildlife/" target="_blank" class="footer__social-link">
+                  <i class="ri-instagram-line"></i>
+              </a>
+              <a href="https://x.com/WWF" target="_blank" class="footer__social-link">
+                  <i class="ri-twitter-line"></i>
+              </a>
+              <a href="https://www.youtube.com/@AnimalProtectionUS" target="_blank" class="footer__social-link">
+                  <i class="ri-youtube-fill"></i>
+              </a>
+          </div>
+
+          <span class="footer__copy">
+              &copy; Copyright Animal Protection Alliance. All rights reserved.
+          </span>
+      </div>
+  </div>
+</footer>
+
+        <!-- HOMEPAGE - JS -->
+        <script src="../HomePage/script.js"></script>
+</body>
+</html>

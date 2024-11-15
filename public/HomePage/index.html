@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animal Protection Alliance</title>
+
+    <!--Favicon-->
+    <link rel="icon" href="../images/earth.png" type="image/x-icon">
+
+    
+
+    <!-- REMIX ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" integrity="sha512-MqL4+Io386IOPMKKyplKII0pVW5e+kb+PI/I3N87G3fHIfrgNNsRpzIXEi+0MQC0sR9xZNqZqCYVcC61fL5+Vg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- OWN CSS -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <!--================== HEADER ==================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="../HomePage/index.html" class="nav__logo">
+              AnimalProtectionAlliance
+            </a>
+
+            <div class="nav__menu" id="nav_menu">
+                <ul class="nav__list">
+                    <li class="nav__item" onclick="location.href='./index.html';" style="cursor: pointer;">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+
+                    <li class="nav__item" onclick="location.href='../StoriesPage/storiesMain.html';" style="cursor: pointer;">
+                        <a href="#stories" class="nav__link">Stories</a>
+                    </li>
+
+                    <li class="nav__item" onclick="location.href='../EventsPage/EventsMain.html';" style="cursor: pointer;">
+                        <a href="#events" class="nav__link">Events</a>
+                    </li>
+
+                    <li class="nav__item" onclick="location.href='../DonationPage/DonationMain.html';" style="cursor: pointer;">
+                        <a href="#donate" class="nav__link">Donate</a>
+                    </li>
+                </ul>
+
+                <!--Close Button-->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <!-- Toggle Button -->
+             <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+             </div>
+
+        </nav>
+    </header>
+
+  <!--================== MAIN ==================-->
+  <main class="main">
+    <!-- ================ HOME ================== -->
+    <section class="home section" id="home">
+      <img src="./images/Main BG.jpeg" alt="" class="home__bg" id="home__bg">
+      <div class="home__shadow"></div>
+
+      <div class="home__container container grid">
+        <div class="home__data">
+          <h3 class="home__subtitle">
+            Rewrite the Future of Animals
+          </h3>
+          
+          <h1 class="home__title">
+            Donate <br>A Lifeline
+          </h1>
+          
+          <p class="home__description">
+            Your kindness can bring hope to those who need it most—be the reason vulnerable animals find safety.
+          </p>
+
+          <a href="../DonationPage/DonationMain.html" class="button">
+            Donate Now <i class="ri-arrow-right-line"></i> 
+          </a>
+        </div>
+
+        <div class="home__cards grid">
+          <article class="home__card" onclick="location.href='../StoriesPage/SambarDeer.html';" style="cursor: pointer;">
+            <img src="./images/home-card-4.jpg" alt="" class="home__card-img">
+            <h3 class="home__card-title">Lost Deer</h3>
+            <div class="home__card-shadow"></div>
+          </article>
+
+          <article class="home__card" onclick="location.href='../StoriesPage/Elephant.html';" style="cursor: pointer;">
+            <img src="./images/home-card-2.jpg" alt="" class="home__card-img">
+            <h3 class="home__card-title">Fleeing Giants</h3>
+            <div class="home__card-shadow"></div>
+          </article>
+
+          <article class="home__card" onclick="location.href='../StoriesPage/dog.html';" style="cursor: pointer;">
+            <img src="./images/home-card-1.jpg" alt="" class="home__card-img">
+            <h3 class="home__card-title">Rescued Stray</h3>
+            <div class="home__card-shadow"></div>
+          </article>
+
+          <article class="home__card" onclick="location.href='../StoriesPage/WhiteTiger.html';" style="cursor: pointer;">
+            <img src="./images/home-card-3.jpg" alt="" class="home__card-img">
+            <h3 class="home__card-title">White Tiger</h3>
+            <div class="home__card-shadow"></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+     <section class="about section" id="stories">
+      <div class="about__container container grid">
+        <div class="about__data">
+          <h2 class="section__title">
+            Know More <br> About Animals
+          </h2>
+
+          <p class="about__description">
+            Animals face suffering from habitat loss, poaching, and neglect. Your donation provides them with food, shelter, and care. Help give these animals a second chance. Every contribution brings hope and healing to animals in need.
+          </p>
+
+          <a href="../StoriesPage/storiesMain.html" class="button">
+            Explore Animals <i class="ri-arrow-right-line"></i>
+          </a>
+        </div>
+
+        <div class="about__image">
+          <img src="./images/More Stories-2.png" alt="" class="about__img">
+          <div class="about__shadow"></div>
+        </div>
+      </div>
+     </section>
+
+     <!-- ======================= POPULAR ==================== -->
+      <section class="popular section" id="events">
+        <h2 class="section__title">
+          Learn about wildlife <br> conservation campaigns
+        </h2>
+
+        <div class="popular__container container grid">
+          <article class="popular__card">
+            <div class="popular__image">
+              <img src="./images/event-1.jpg" alt="" class="popular__img">
+              <div class="popular__shadow"></div>
+            </div>
+
+            <h2 class="popular__title">
+              LASA Annual Conference
+            </h2>
+
+            <div class="popular__location">
+              <i class="ri-map-pin-line"></i>
+              <span>UK</span>
+            </div>
+          </article>
+
+          <article class="popular__card">
+            <div class="popular__image">
+              <img src="./images/event-2.jpg" alt="" class="popular__img">
+              <div class="popular__shadow"></div>
+            </div>
+
+            <h2 class="popular__title">
+              Be Kind to Animals Week
+            </h2>
+
+            <div class="popular__location">
+              <i class="ri-map-pin-line"></i>
+              <span>World Wide</span>
+            </div>
+          </article>
+
+          <article class="popular__card">
+            <div class="popular__image">
+              <img src="./images/event-3.jpg" alt="" class="popular__img">
+              <div class="popular__shadow"></div>
+            </div>
+
+            <h2 class="popular__title">
+              Animal Welfare in Livestock Production
+            </h2>
+
+            <div class="popular__location">
+              <i class="ri-map-pin-line"></i>
+              <span>Spain</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ==================== EXPLORE ==================== -->
+      <section class="explore section" id="donate">
+        <div class="explore__container">
+          <div class="explore__image">
+            <img src="./images/hendrik-cornelissen-qs4E9t0hJc0-unsplash.jpg" alt="" class="explore__img">
+            <div class="explore__shadow"></div>
+          </div>
+
+          <div class="explore__content container grid">
+            <div class="explore__data">
+              <h2 class="section__title">
+                The Voice <br> For the Voiceless...
+              </h2>
+
+              <p class="explore__description">
+                Our modern world places enormous pressures on animals and the natural world. We must have the wisdom and foresight to make better choices to preserve it.
+              </p>
+            </div>
+
+            <div class="explore__user">
+              <img src="./images/WhatsApp Image 2024-11-04 at 7.35.59 PM.jpeg" alt="" class="explore__perfil">
+              <span class="explore__name">Queen Elizabeth II</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================== JOIN ========================== -->
+      <section class="join section" id="donate">
+        <div class="join__container container grid">
+          <div class="join__data">
+            <h2 class="section__title">
+              Your Helps <br>
+              Begins Here
+            </h2>
+
+            <p class="join__description">
+              Donating is giving resources freely to support a cause or help those in need, creating positive change and strengthening communities.
+            </p>
+
+            <form action="" class="join__form">
+              <a class="join__button button" href="../DonationPage/DonationMain.html">
+                Start Donating <i class="ri-arrow-right-line"></i>
+              </a>
+            </form>
+          </div>
+
+          <div class="join__image">
+            <img src="./images/connect-1.jpg" alt="" class="join__img">
+            <div class="join__shadow"></div>
+          </div>
+        </div>
+      </section>
+
+<!-- ======================= FOOTER ======================= -->
+<footer class="footer">
+    <div class="footer__container container grid">
+        <div class="footer__content grid">
+            <div>
+                <a href="https://www.animalaidunlimited.org/" target="_blank" class="footer__logo">
+                    Animal Protection Alliance
+                </a>
+
+                <p class="footer__description">
+                    Help us make a difference for animals in need. <br>
+                    Your support provides care, shelter, and hope. <br>
+                    Join us in protecting them!
+                </p>
+            </div>
+
+            <div class="footer__data grid">
+                <div>
+                    <h3 class="footer__title">About</h3>
+                    <ul class="footer__links">
+                        <li>
+                            <a href="https://www.animalaidunlimited.org/about-us" target="_blank" class="footer__link">About Us</a>
+                        </li>
+                        <li>
+                            <a href="https://www.peta.org/about-peta/" target="_blank" class="footer__link">Features</a>
+                        </li>
+                        <li>
+                            <a href="https://www.aspca.org/news" target="_blank" class="footer__link">News Blog</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer__title">Company</h3>
+                    <ul class="footer__links">
+                        <li>
+                            <a href="https://www.animalaidunlimited.org/faqs" target="_blank" class="footer__link">FAQs</a>
+                        </li>
+                        <li>
+                            <a href="https://www.wwf.org.uk/about-us/history" target="_blank" class="footer__link">History</a>
+                        </li>
+                        <li>
+                            <a href="https://www.animalaidunlimited.org/testimonials" target="_blank" class="footer__link">Testimonials</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer__title">Contact</h3>
+                    <ul class="footer__links">
+                        <li>
+                            <a href="https://www.animalaidunlimited.org/contact" target="_blank" class="footer__link">Call Center</a>
+                        </li>
+                        <li>
+                            <a href="https://www.peta.org/contact-peta/" target="_blank" class="footer__link">Support Center</a>
+                        </li>
+                        <li>
+                            <a href="https://www.aspca.org/about-us/contact-us" target="_blank" class="footer__link">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer__title">Support</h3>
+                    <ul class="footer__links">
+                        <li>
+                            <a href="https://www.wwf.org.uk/privacy" target="_blank" class="footer__link">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="https://www.peta.org/about-peta/terms-of-use/" target="_blank" class="footer__link">Terms & Services</a>
+                        </li>
+                        <li>
+                            <a href="https://www.animalaidunlimited.org/donate" target="_blank" class="footer__link">Donations</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__group">
+            <div class="footer__social">
+                <a href="https://www.facebook.com/worldwildlife" target="_blank" class="footer__social-link">
+                    <i class="ri-facebook-circle-line"></i>
+                </a>
+                <a href="https://www.instagram.com/world_wildlife/" target="_blank" class="footer__social-link">
+                    <i class="ri-instagram-line"></i>
+                </a>
+                <a href="https://x.com/WWF" target="_blank" class="footer__social-link">
+                    <i class="ri-twitter-line"></i>
+                </a>
+                <a href="https://www.youtube.com/@AnimalProtectionUS" target="_blank" class="footer__social-link">
+                    <i class="ri-youtube-fill"></i>
+                </a>
+            </div>
+
+            <span class="footer__copy">
+                &copy; Copyright Animal Protection Alliance. All rights reserved.
+            </span>
+        </div>
+    </div>
+</footer>
+
+
+  </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

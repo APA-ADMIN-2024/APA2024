@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Animal Protection Alliance</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css" integrity="sha512-Ez0cGzNzHR1tYAv56860NLspgUGuQw16GiOOp/I2LuTmpSK9xDXlgJz3XN4cnpXWDmkNBKXR/VDMTCnAaEooxA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Own CSS -->
+    <link rel="stylesheet" href="./stylesheets/style.css">
+</head>
+<body>
+    <div class="container container-wrapper">
+        <div class="row row-wrapper p-3 shadow">
+            <div class="col-md-6 left-box">
+                <div class="featured-image mb-3"></div>
+                <p>Guardians of the WILD.</p>
+            </div>
+
+            <div class="col-md-6 right-box">
+                <div class="forms">
+                    <form action="/login" method="post">
+                        <div class="form-container loginForm">
+                            <div class="header-text mb-4 d-flex justify-content-center">
+                                <h2>LOGIN</h2>
+                            </div>
+                            <div class="form-wrapper mb-3">
+                                <input type="text" class="form-control bg-light" placeholder="Enter Email" name="email" required>
+                            </div>
+                            <div class="form-wrapper mb-2">
+                                <input type="password" class="form-control bg-light" placeholder="Enter Password" name="password" required>
+                            </div>
+                            <div class="form-wrapper mb-3">
+                                <button class="btn-wrapper">Login</button>
+                            </div>
+                            <div class="form-wrapper mb-3">
+                                <a class="btn-google" type="submit" href="/auth/google"><img src="/images/google.png" alt="" class="google-img"> Continue With Google</a>
+                            </div>
+                            <div class="signup-account">
+                                <p>Don't have an account? <a class="links signuplink" href="/signup">Sign Up</a></p>
+                            </div>
+                        </div>
+                     </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js" integrity="sha512-EKWWs1ZcA2ZY9lbLISPz8aGR2+L7JVYqBAYTq5AXgBkSjRSuQEGqWx8R1zAX16KdXPaCjOCaKE8MCpU0wcHlHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- SweetAlert2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <% if (typeof error !== "undefined") { %>
+        <script>
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: '<%= error %>',
+            });
+        </script>
+    <% } %>
+
+</body>
+</html>

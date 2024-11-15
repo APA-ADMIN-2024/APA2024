@@ -1,0 +1,295 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url(/images/main-bg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.row-wrapper {
+    width: 100%;
+    max-width: 900px;
+    border-radius: 0.925rem;
+    background-color: rgba(255, 255, 255, 0.375);
+    border:none;
+    backdrop-filter: blur(12px);
+    display: flex;
+    flex-direction: row;
+
+}
+
+.left-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.750rem;
+    background: url(/images/main-bg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    flex: 1;
+    /* Adjusted to take up equal space */
+}
+
+.left-box p {
+    font-size: 1.975rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.right-box {
+    min-height: 500px;
+    padding: 2rem;
+    flex: 1;
+    /* Adjusted to take up equal space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.forms {
+    width: 100%;
+    max-width: 400px;
+    /* Set max width for the forms */
+}
+
+.form-container {
+    display: none;
+}
+
+.loginForm {
+    display: block;
+}
+
+.forms .Signupform {
+    display: block;
+}
+
+.forms.Show-Signup .loginForm {
+    display: none;
+}
+
+.header-text h2{
+    color: #000000;
+    text-align: center;
+    font-size: 2.25rem;
+}
+
+.form-wrapper {
+    margin-bottom: 1rem;
+}
+
+.form-wrapper input{
+    font-size: 0.975rem;
+    width: 100%;
+}
+.form-control:focus {
+    border: #050505;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Blue glow effect */
+    outline: none; /* Removes the default outline */
+  }
+  
+.form-wrapper a {
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+}
+
+.form-wrapper .btn-wrapper {
+    width: 100%;
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: #fff;
+    border-radius: 7px;
+    background: linear-gradient(45deg, #3F291C, #7A5239);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0.75rem;
+    transition: background 4s ease; /* Targets background and box-shadow */
+}
+
+.form-wrapper .btn-wrapper:hover {
+    background: linear-gradient(to right, #7A5239, #3F291C);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slightly larger shadow on hover */
+}
+.form-wrapper .btn-google{
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 400;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.form-wrapper .btn-google:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);   
+}
+.btn-google {
+    width: 100%;
+    font-size: 0.925rem;
+    font-weight: 400;
+    border-radius: 7px;
+    padding: 0.75rem;
+    /* Increased padding for better appearance */
+    background-color: #ececec;
+    color: #000;
+}
+
+.signupBtn{
+    margin-top: 1.26rem;
+}
+
+.forgot-password {
+    margin-bottom: 1.125rem;
+}
+
+.google-img {
+    width: 1.235rem;
+    margin-right: 0.25rem;
+}
+
+.signup-account {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.25rem;
+}
+
+.signup-account a,
+p {
+    text-decoration: none;
+    color: #000;
+}
+
+.signup-account a {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.signup-account a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+
+@media (max-width: 1024px) {
+
+    .left-box {
+
+        height: auto;
+        /* Allow height to adjust based on content */
+
+        padding: 2rem;
+
+    }
+
+    .header-text h2{
+        color: #000000;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .right-box {
+
+        padding: 1.5rem;
+
+    }
+
+
+
+    .form-wrapper input {
+
+        font-size: 0.9rem;
+
+    }
+
+
+
+    .form-wrapper .btn-wrapper,
+    .btn-google {
+
+        padding: 0.6rem;
+        /* Slightly reduced padding for smaller screens */
+
+    }
+
+}
+
+
+
+@media (max-width: 768px) {
+
+    .row-wrapper {
+
+        flex-direction: column;
+
+    }
+
+    .left-box,
+    .right-box {
+        width: 100%;
+        /* Ensure both boxes take full width */
+        padding: 1rem;
+        /* Reduced padding for smaller screens */
+
+    }
+
+    .left-box p {
+        font-size: 1.5rem;
+        /* Smaller font size for mobile */
+    }
+
+    .form-wrapper input {
+        font-size: 0.875rem;
+        /* Adjust font size for smaller screens */
+    }
+
+
+
+    .form-wrapper .btn-wrapper,
+    .btn-google {
+
+        padding: 0.5rem;
+        /* Further reduced padding */
+
+    }
+
+}
+
+
+
+@media (max-width: 576px) {
+
+    .left-box p {
+        font-size: 1.25rem;
+        /* Even smaller font size for very small screens */
+    }
+
+    .form-wrapper input {
+        font-size: 0.825rem;
+        /* Further adjust font size */
+    }
+
+    .form-wrapper .btn-wrapper,
+    .btn-google {
+
+        padding: 0.4rem;
+        /* Minimal padding for very small screens */
+
+    }
+
+}
